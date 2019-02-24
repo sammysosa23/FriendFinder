@@ -1,22 +1,46 @@
-// var friendsData = require("../app/data/friends.js");
+var friends = require("../app/data/friends.js");
 // var express = require('express');
-// var path = require('path');
-// var router = express.Router()
 var path = require('path');
+// var router = express.Router()
 
+// API ROUTES
 module.exports = function (app) {
 
-  // ROUTE TO HOME.HTML
-  app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, '../public/home.html'));
+  app.get('/api/friends', function (req, res) {
+    res.json(friends)
   });
 
-  // ROUTE TO SURVEY.HTML
-  app.get('/survey', function (req, res) {
-    res.sendFile(path.join(__dirname, '../public/survey.html'));
+
+  app.post('/api/friends', function (req, res) {
+    var userInput = req.body;
+    var userResponses = userInput.scores;
+
+    var matchName = "";
+    var matchImage = "";
+    var totalDifference = 1000;
+
+    for (var i = 0; i < friends.length; i++) {
+
+      var diff = 0;
+
+      for (var j = 0; i < friends.length; i++) {
+
+        var diff = 0;
+        for (var j = 0; j < userResponses.length; j++) {
+          diff += Math.abs(friends[i].scores[j] - userResponses[j]);
+        }
+
+        if (diff < totalDifference) {
+          totalDifference = diff;
+          matchName = friends[i].name;
+          matchImage = friends[i].photo;
+        }
+      }
+      friends.push(userinput);
+      res.join({ status: 'OK', matchName: matchName, matchImage: matchImage });
+    };
   });
 };
-
 // /Users/samterrazas/Desktop/ga-tech/FriendFinder/app/data/friends.js
 // ROUTING
 // module.exports = function (app) {
