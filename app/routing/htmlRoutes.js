@@ -13,7 +13,7 @@ module.exports = function (app) {
 
   // ROUTE TO SURVEY 
   app.get("/survey", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/survey.html"));
+    res.sendFile(path.join(__dirname, "/survey.html"));
   });
 
   // IF NO ROUTE IS LOCATED IT WILL DEFAULT BACK TO HOME PAGE
@@ -22,3 +22,6 @@ module.exports = function (app) {
   });
   // module.exports = router;
 }
+
+
+// FriendFinder / app / public / survey.html

@@ -29,8 +29,8 @@ app.use(bodyParser.text());
 // - - - - - - - - - - - - - - - - //
 
 // ROUTER POINTING TO ROUTE FILES NEEDED TO RUN
-require(path.join(__dirname, "./routing/htmlRoutes.js"))(app);
-require(path.join(__dirname, "./routing/apiRoutes.js"))(app);
+require(path.join(__dirname, "./app/routing/htmlRoutes"))(app);
+require(path.join(__dirname, "./app/routing/apiRoutes"))(app);
 
 // app.use("/", routerHTML);
 // app.use("/api", routerAPI);

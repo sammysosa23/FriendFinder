@@ -26,10 +26,14 @@ main.container {
   align-content: center;
 }
 
-#submitButton {
+/* .waves-light {
+  padding-bottom: 20px;
+} */
+
+/* #submitButton {
   align-content: center;
   text-align: center;
-}
+} */
 
 main h1 {
   /* font-weight: bold; */
