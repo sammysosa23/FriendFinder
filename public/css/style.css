@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .main-header {
+    height: 50vh;
+    width: 100%;
+  }
+}

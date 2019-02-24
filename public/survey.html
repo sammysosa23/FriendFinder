@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> | Friend Finder - Survey | </title>
+  <!-- - - - - - BOOTSTRAP CDN - - - - -  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- - - - - - FONT AWESOME - - - - -  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- - - - - - JQUERY CDN - - - - -  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- - - - - - OPTIMIZATION FOR MOBILE DEVICES - - - - -  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+
+<body>
+  <!-- - - - - - JUMBOTRON - - - - -  -->
+
+  <header>
+    <div class="jumbotron text-center">
+      <h1>| Friend Finder |</h1>
+      <br />
+      <hr>
+      <br>
+      <div class="container">
+        <div class="text-center">
+          <p>Take the survey below to find your compatible match!</p>
+          <h2>Survey Questions:</h2>
+          <br>
+          <ul>
+            <a href="./home.html">
+              <i class="fa fa-home grey-text text-darken-4"></i></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- - - - - - SURVEY FORM - - - - -  -->
+
+  <div class="container survey">
+    <form action="" class="col-sm-12 col-lg-8 col-lg-offset-2">
+      <div class="form-group">
+        <label>Name (Required)</label>
+        <input id="name" type="text" class="form-control" placeholder="Name" required />
+      </div>
+      <div class="form-group">
+        <label>Link to Photo Image (Required)</label>
+        <input id="image" type="text" class="form-control" placeholder="Image link" required />
+      </div>
+      <hr>
+      <h4><strong>Answer the following questions from 1 (Strongly Disagree) to 5 (Strongly Agree)</strong></h4>
+      <hr>
+
+      <!-- - - - - - QUESTION \ ONE - - - - -  -->
+
+      <div class="form-group">
+        <h3>Question:</h3>
+        <label for="exampleFormControlSelect1">1. Are tacos better than burritos?</label>
+        <select class="form-control" id="Q1">
+          <option value="default" disabled selected>Select an option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <!-- - - - - - QUESTION \ TWO - - - - -  -->
+
+      <div class="form-group">
+        <h3>Question:</h3>
+        <label for="exampleFormControlSelect1">2. My typical Friday night consists of Netflix and wine?</label>
+        <select class="form-control" id="Q2">
+          <option value="default" disabled selected>Select an option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <!-- - - - - - QUESTION \ THREE - - - - -  -->
+
+      <div class="form-group">
+        <h3>Question:</h3>
+        <label for="exampleFormControlSelect1">3. Happy hours are the way to a solid friendship?</label>
+        <select class="form-control" id="Q3">
+          <option value="default" disabled selected>Select an option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <!-- - - - - - QUESTION \ FOUR - - - - -  -->
+
+      <div class="form-group">
+        <h3>Question:</h3>
+        <label for="exampleFormControlSelect1">4. Do you like being the center of attention?</label>
+        <select class="form-control" id="Q4">
+          <option value="default" disabled selected>Select an option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <!-- - - - - - QUESTION \ FIVE - - - - -  -->
+
+      <div class="form-group">
+        <h3>Question:</h3>
+        <label for="exampleFormControlSelect1">5. I'm shy/reserved?</label>
+        <select class="form-control" id="Q5">
+          <option value="default" disabled selected>Select an option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <!-- - - - - - QUESTION \ SIX - - - - -  -->
+
+      <div class="form-group">
+        <h3>Question:</h3>
+        <label for="exampleFormControlSelect1">6. You feel more energetic after spending time with a group of
+          people?</label>
+        <select class="form-control" id="Q6">
+          <option value="default" disabled selected>Select an option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <!-- - - - - - QUESTION \ SEVEN - - - - -  -->
+
+      <div class="form-group">
+        <h3>Question:</h3>
+        <label for="exampleFormControlSelect1">7. Do you rely more on your experiences than your imagination?</label>
+        <select class="form-control" id="Q7">
+          <option value="default" disabled selected>Select an option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <!-- - - - - - QUESTION \ EIGHT - - - - -  -->
+
+      <div class="form-group">
+        <h3>Question:</h3>
+        <label for="exampleFormControlSelect1">8. Is a successful/fun weekend spent outdoors?</label>
+        <select class="form-control" id="Q8">
+          <option value="default" disabled selected>Select an option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <!-- - - - - - QUESTION \ NINE - - - - - -->
+
+      <div class="form-group">
+        <h3>Question:</h3>
+        <label for="exampleFormControlSelect1">9. Are you into materialistic items?</label>
+        <select class="form-control" id="Q9">
+          <option value="default" disabled selected>Select an option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <!-- - - - - - QUESTION \ TEN - - - - -  -->
+
+      <div class="form-group">
+        <h3>Question:</h3>
+        <label for="exampleFormControlSelect1">10. If possible would you travel from 8 consecutive weeks?</label>
+        <select class="form-control" id="Q10">
+          <option value="default" disabled selected>Select an option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+    </form>
+    <br />
+    <br>
+    <hr>
+
+    <!-- - - - - - SUBMIT BUTTON - - - - - -->
+
+    <button id="submitButton" type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+  </div>
+  <br>
+  <hr>
+
+  <!-- - - - - - MODAL - - - - - -->
+
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Best Match</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="results-modal" role="dialog" class="modal">
+    <div class="modal-dialog">
+      <modal-content></modal-content>
+    </div>
+  </div>
+
+  <!-- - - - - -  FOOTER - - - - -  -->
+
+  <footer class="footer text-center">
+    <div class="container">
+      <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/sammysosa23/FriendFinder">GitHub
+          Repo</a> | <a href="home.html">Home</a></p>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+
+    // var config = {
+    //   ".option-select": {},
+    //   ".option-select-deselect": { allow_single_deselect: true },
+    //   ".option-select-no-single": { disable_search_threshold: 10 },
+    //   ".option-select-no-results": { no_results_text: "Nothing was found." },
+    //   ".option-select-width": { width: "95%" }
+    // }
+    // for (var selector in config) {
+    //   $(selector).chosen(config[selector]);
+    // }
+    $(document).ready(function () {
+      $("#submitButton").on("click", function (event) {
+        console.log('clicked');
+        event.preventDefault();
+
+        function validateForm() {
+          var isValid = true;
+          $(".form-control").each(function () {
+            if ($(this).val() === "") {
+              isValid = false;
+            }
+          });
+          return isValid;
+        }
+        if (validateForm()) {
+          var userData = {
+            name: $("#name").val().trim(),
+            image: $("#image").val().trim(),
+            questions: [
+              $("#Q1").val(),
+              $("#Q2").val(),
+              $("#Q3").val(),
+              $("#Q4").val(),
+              $("#Q5").val(),
+              $("#Q6").val(),
+              $("#Q7").val(),
+              $("#Q8").val(),
+              $("#Q9").val(),
+              $("#Q10").val()
+            ]
+          };
+          $.post("./api/friends", userData, function (data) {
+            console.log(data);
+            $("#match-name").text(data.name);
+            $("#match-img").attr("src", data.photo);
+            $("#results-modal").modal("toggle");
+          });
+        } else {
+          alert("Please fill out all fields before submitting survey!")
+        }
+        $(".form-control").val("");
+        $(".chosen-select").val("default");
+      });
+
+    });
+
+  </script>
+</body>
+
+</html>
