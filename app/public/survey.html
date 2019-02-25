@@ -1,46 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <title> | Friend Finder - Survey | </title>
+  <title>Friend Finder Pro</title>
 
-  <!-- - - - - - JQUERY CDN - - - - - -->
+  <!-- Link to the jQuery Library -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
-  <!-- - - - - - MATERIALIZED CSS & JS - - - - -  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <!-- Including Font Awesome Icons -->
+  <script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
 
-  <!-- - - - - - FONT AWESOME - - - - - -->
-  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- Link to reset stylesheet -->
+  <link rel="stylesheet" href="css/reset.css">
 
-  <!-- - - - - - GOOGLE FONTS & ICONS - - - - - -->
-  <link href="https://fonts.googleapis.com/css?family=Bangers|Oswald" rel="stylesheet">
+  <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <!-- Compiled and minified Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 
-  <!-- - - - - - OPTIMIZATION FOR MOBILE DEVICES - - - - - -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <!-- Compiled and minified Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
-  <!-- - - - - - CSS RESET STYLE SHEET - - - - - -->
-  <link rel="stylesheet" href="css/reset.css">
-  <!-- - - - - - CSS STYLE SHEET - - - - - -->
-  <link rel="stylesheet" href="./css/style.css">
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
-    <!-- - - - - - NAVBAR - - - - -  -->
     <nav>
       <div class="nav-wrapper blue lighten-3 accent-2">
         <i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
-        <a href="/" class="brand-logo" id="logo"> | Friend Finder |</a>
+        <a href="/" class="brand-logo" id="logo">Friend Finder</a>
         <ul class="right hide-on-med-and-down" id="head-nav-links">
-          <li><a href="/home">Home</a></li>
+          <!-- <li><a href="/home">Home</a></li> -->
           <li><a href="/api/friends">API Friends List</a></li>
           <li><a href="https://github.com/sammysosa23/FriendFinder">GitHub Repo</a></li>
         </ul>
@@ -48,7 +40,6 @@
     </nav>
   </header>
 
-  <!-- - - - - - SURVEY FORM - - - - -  -->
   <main>
     <div class="container">
       <div class="row">
@@ -71,10 +62,10 @@
               <input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
             </div>
 
-            <!-- - - - - - QUESTION \ ONE - - - - -  -->
+            <!-- Survey Questions -->
             <div class="input-field col s12">
-              <h4>Question:</h4>
-              <h5>1. Are tacos better than burritos?</h5>
+              <h3>Question 1</h3>
+              <h5> Are tacos better than burritos?.</h5>
               <select id="question1">
                 <option value="" disabled selected>Choose your option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -83,12 +74,11 @@
                 <option value="4">4</option>
                 <option value="5">5 (Strongly Agree)</option>
               </select>
-              <!-- <label for="">Materialize Select</label> -->
             </div>
-            <!-- - - - - - QUESTION \ TWO - - - - -  -->
+
             <div class="input-field col s12">
-              <h4>Question:</h4>
-              <h5>2. My typical Friday night consists of Netflix and wine?</h5>
+              <h3>Question 2</h3>
+              <h5> My typical Friday night consists of Netflix and wine?</h5>
               <select id="question2">
                 <option value="" disabled selected>Choose your option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -99,10 +89,9 @@
               </select>
             </div>
 
-            <!-- - - - - - QUESTION \ THREE - - - - -  -->
             <div class="input-field col s12">
-              <h4>Question:</h4>
-              <h5>3. Happy hours are the way to a solid friendship?</h5>
+              <h3>Question 3</h3>
+              <h5>Happy hours are the way to a solid friendship?</h5>
               <select id="question3">
                 <option value="" disabled selected>Choose your option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -113,10 +102,9 @@
               </select>
             </div>
 
-            <!-- - - - - - QUESTION \ FOUR - - - - -  -->
             <div class="input-field col s12">
-              <h4>Question:</h4>
-              <h5>4. Do you like being the center of attention?</h5>
+              <h3>Question 4</h3>
+              <h5> Do you like being the center of attention?</h5>
               <select id="question4">
                 <option value="" disabled selected>Choose your option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -127,10 +115,9 @@
               </select>
             </div>
 
-            <!-- - - - - - QUESTION \ FIVE - - - - -  -->
             <div class="input-field col s12">
-              <h4>Question:</h4>
-              <h5>5. I'm shy/reserved?</h5>
+              <h3>Question 5</h3>
+              <h5> I'm shy/reserved?</h5>
               <select id="question5">
                 <option value="" disabled selected>Choose your option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -141,11 +128,10 @@
               </select>
             </div>
 
-            <!-- - - - - - QUESTION \ SIX - - - - -  -->
             <div class="input-field col s12">
-              <h4>Question:</h4>
-              <h5>6. You feel more energetic after spending time with a group of
-                people?</h5>
+              <h3>Question 6</h3>
+              <h5> You feel more energetic after spending time with a group of
+                people</h5>
               <select id="question6">
                 <option value="" disabled selected>Choose your option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -156,9 +142,8 @@
               </select>
             </div>
 
-            <!-- - - - - - QUESTION \ SEVEN - - - - -  -->
             <div class="input-field col s12">
-              <h4>Question:</h4>
+              <h3>Question 7</h3>
               <h5>7. Do you rely more on your experiences than your imagination?</h5>
               <select id="question7">
                 <option value="" disabled selected>Choose your option</option>
@@ -170,10 +155,9 @@
               </select>
             </div>
 
-            <!-- - - - - - QUESTION \ EIGHT - - - - -  -->
             <div class="input-field col s12">
-              <h4>Question:</h4>
-              <h5>8. Is a successful/fun weekend spent outdoors?</h5>
+              <h3>Question 8</h3>
+              <h5> Is a successful/fun weekend spent outdoors?</h5>
               <select id="question8">
                 <option value="" disabled selected>Choose your option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -184,10 +168,9 @@
               </select>
             </div>
 
-            <!-- - - - - - QUESTION \ NINE - - - - -  -->
             <div class="input-field col s12">
-              <h4>Question:</h4>
-              <h5>9. Do you prefer Apple products?</h5>
+              <h3>Question 9</h3>
+              <h5>Do you prefer Apple products?</h5>
               <select id="question9">
                 <option value="" disabled selected>Choose your option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -198,10 +181,9 @@
               </select>
             </div>
 
-            <!-- - - - - - QUESTION \ TEN - - - - -  -->
             <div class="input-field col s12">
-              <h4>Question:</h4>
-              <h5>10. If possible would you travel from 8 consecutive weeks?</h5>
+              <h3>Question 10</h3>
+              <h5> If possible would you travel from 8 consecutive weeks?</h5>
               <select id="question10">
                 <option value="" disabled selected>Choose your option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -210,14 +192,13 @@
                 <option value="4">4</option>
                 <option value="5">5 (Strongly Agree)</option>
               </select>
-              <br>
-              <br>
             </div>
 
-            <!-- - - - - - SUBMIT BUTTON - - - - - -->
+            <!-- Survey Submit Button -->
             <div>
-              <button class="btn waves-effect waves-teal" type="submit" name="action" id="submitButton">Submit
-                <i class="material-icons center"></i>
+              <button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton">Submit
+                Responses
+                <i class="material-icons right">send</i>
               </button>
             </div>
           </div>
@@ -226,92 +207,94 @@
     </div>
   </main>
 
-
-
-  <!-- - - - - - MODAL - - - - - -->
-
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Friend Match</h4>
-      <div class="divider"></div>
-      <h5 id="userMatch"></h5>
-      <img id="userMatchImage" class="materialboxed" width="650" src="">
-    </div>
-    <div class="modal-footer">
-      <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-    </div>
-  </div>
-
-  <!-- - - - - -  FOOTER - - - - -  -->
   <footer class="page-footer blue lighten-3 accent-2">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">| Friend Finder |</h5>
-          <p class="grey-text text-lighten-4">True friends don't judge each other they judge other people....together.
+          <p class="grey-text text-lighten-4">True friends don't judge each other they judge other people....together..
           </p>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links</h5>
           <ul>
             <li><a class="grey-text text-lighten-3" href="/api/friends">API Friends List</a></li>
-            <br>
             <li><a class="grey-text text-lighten-3" href="https://github.com/sammysosa23/FriendFinder">GitHub Repo</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
+    <!-- <div class="footer-copyright">
+<div class="container">
+© 2017 angrbrd entertainment
+<a class="grey-text text-lighten-4 right" href="https://github.com/sammysosa23/FriendFinder">Reference Work</a>
+</div>
+</div> -->
   </footer>
 
+  <!-- Modal Dialog Displaying Closest Friend Match -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Closest Friend Match</h4>
+      <div class="divider"></div>
+      <h5 id="userMatch"></h5>
+      <img id="userMatchImage" class="materialboxed" width="650" src="">
+    </div>
+    <div class="modal-footer">
+      <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
+    </div>
+  </div>
+
   <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('select');
-      var instances = M.FormSelect.init(elems, options);
-    });
-
-
-
     $(document).ready(function () {
-      // $('select').material_select();
-      $('select').formSelect();
+      $('select').material_select();
 
       $('.modal').modal({
-        dismissible: false,
-        opacity: .5,
-        inDuration: 300,
-        outDuration: 200,
-        startingTop: '4%',
-        endingTop: '10%'
+        dismissible: false, // Modal can be dismissed by clicking outside of the modal
+        opacity: .5, // Opacity of modal background
+        inDuration: 300, // Transition in duration
+        outDuration: 200, // Transition out duration
+        startingTop: '4%', // Starting top style attribute
+        endingTop: '10%' // Ending top style attribute
       });
     });
 
+    // Activate submit button
     $('#submitButton').on('click', function (event) {
-      console.log('clicked');
+      console.log("ive been clicked")
       event.preventDefault();
 
+      // Gather user inputs
       var userInput = {
-        name: $('#userName').val().trim(),
-        photo: $('#userPhoto').val().trim(),
+        name: $('#userName').val(),
+        photo: $('#userPhoto').val(),
         scores: [
-          $('question1').val().trim(),
-          $('question2').val().trim(),
-          $('question3').val().trim(),
-          $('question4').val().trim(),
-          $('question5').val().trim(),
-          $('question6').val().trim(),
-          $('question7').val().trim(),
-          $('question8').val().trim(),
-          $('question9').val().trim(),
-          $('question10').val().trim(),
+          $('#question1').val(),
+          $('#question2').val(),
+          $('#question3').val(),
+          $('#question4').val(),
+          $('#question5').val(),
+          $('#question6').val(),
+          $('#question7').val(),
+          $('#question8').val(),
+          $('#question9').val(),
+          $('#question10').val()
         ]
       };
-      console.log('suerInput = ' + JSON.stringify(userInput));
 
-      $.post('/.api/friends', userInput)
+      // console.log('userInput = ' + JSON.stringify(userInput));
+
+      // Add user inputs to friends list
+      $.post('/api/friends', userInput)
         .done(function (data) {
-          $('#userMatch').html(data.matchName);
+          // console.log('response = ' + JSON.stringify(data));
 
+          // Set the name and image values of friend match
+          $('#userMatch').html(data.matchName);
+          $("#userMatchImage").attr("src", data.matchImage);
+
+          // Pop open the modal dialog
           $('#modal1').modal('open');
         });
     });
