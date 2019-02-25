@@ -11,17 +11,7 @@ The application is implemented using Node.js and Express server on the back end.
 - - - 
 
 ### Demo
-- - - 
-Friend Finder is deployed to Heroku. CLICK HERE
+
+Friend Finder is deployed to -[Heroku](https://arcane-badlands-59243.herokuapp.com/)
 
 - - - 
-
-### HOME PAGE - GIF
-
-
-
-### SURVEY PAGE - GIF
-
-
-
-

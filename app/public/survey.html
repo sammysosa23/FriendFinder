@@ -4,28 +4,28 @@
 <head>
   <title>Friend Finder Pro</title>
 
-  <!-- Link to the jQuery Library -->
+  <!-- JQUERY  -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-  <!-- Including Font Awesome Icons -->
+  <!-- FONT AWESOME -->
   <script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
 
-  <!-- Link to reset stylesheet -->
+  <!-- RESET STYLE SHEET -->
   <link rel="stylesheet" href="css/reset.css">
 
-  <!--Import Google Icon Font-->
+  <!-- GOOGLE FONT ICON -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Compiled and minified Materialize CSS -->
+  <!-- MATERIALIZE -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-
-  <!-- Compiled and minified Materialize JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
+  <!-- CSS STYLE SHEET -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <!-- NAVBAR -->
   <header>
     <nav>
       <div class="nav-wrapper blue lighten-3 accent-2">
@@ -40,6 +40,7 @@
     </nav>
   </header>
 
+  <!-- SURVEY CONTAINER -->
   <main>
     <div class="container">
       <div class="row">
@@ -55,14 +56,15 @@
               <i class="material-icons prefix">account_circle</i>
               <input type="text" class="validate" placeholder="Your Name Here" id="userName">
             </div>
-
             <div class="input-field col s6">
               <h5>Link to Photo Image (Required)</h5>
               <i class="material-icons prefix">picture_in_picture</i>
               <input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
             </div>
 
-            <!-- Survey Questions -->
+            <!-- SURVEY QUESTIONS -->
+
+            <!-- QUESTION: ONE -->
             <div class="input-field col s12">
               <h3>Question 1</h3>
               <h5> Are tacos better than burritos?.</h5>
@@ -76,6 +78,7 @@
               </select>
             </div>
 
+            <!-- QUESTION: TWO -->
             <div class="input-field col s12">
               <h3>Question 2</h3>
               <h5> My typical Friday night consists of Netflix and wine?</h5>
@@ -89,6 +92,7 @@
               </select>
             </div>
 
+            <!-- QUESTION: THREE -->
             <div class="input-field col s12">
               <h3>Question 3</h3>
               <h5>Happy hours are the way to a solid friendship?</h5>
@@ -102,6 +106,7 @@
               </select>
             </div>
 
+            <!-- QUESTION: FOUR -->
             <div class="input-field col s12">
               <h3>Question 4</h3>
               <h5> Do you like being the center of attention?</h5>
@@ -115,6 +120,7 @@
               </select>
             </div>
 
+            <!-- QUESTION: FIVE -->
             <div class="input-field col s12">
               <h3>Question 5</h3>
               <h5> I'm shy/reserved?</h5>
@@ -128,6 +134,7 @@
               </select>
             </div>
 
+            <!-- QUESTION: SIX -->
             <div class="input-field col s12">
               <h3>Question 6</h3>
               <h5> You feel more energetic after spending time with a group of
@@ -142,6 +149,7 @@
               </select>
             </div>
 
+            <!-- QUESTION: SEVEN -->
             <div class="input-field col s12">
               <h3>Question 7</h3>
               <h5>7. Do you rely more on your experiences than your imagination?</h5>
@@ -155,6 +163,7 @@
               </select>
             </div>
 
+            <!-- QUESTION: EIGHT -->
             <div class="input-field col s12">
               <h3>Question 8</h3>
               <h5> Is a successful/fun weekend spent outdoors?</h5>
@@ -168,6 +177,7 @@
               </select>
             </div>
 
+            <!-- QUESTION: NINE -->
             <div class="input-field col s12">
               <h3>Question 9</h3>
               <h5>Do you prefer Apple products?</h5>
@@ -181,6 +191,7 @@
               </select>
             </div>
 
+            <!-- QUESTION: TEN -->
             <div class="input-field col s12">
               <h3>Question 10</h3>
               <h5> If possible would you travel from 8 consecutive weeks?</h5>
@@ -194,7 +205,7 @@
               </select>
             </div>
 
-            <!-- Survey Submit Button -->
+            <!-- SURVEY SUBMIT BUTTON -->
             <div>
               <button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton">Submit
                 Responses
@@ -207,6 +218,7 @@
     </div>
   </main>
 
+  <!-- FOOTER -->
   <footer class="page-footer blue lighten-3 accent-2">
     <div class="container">
       <div class="row">
@@ -225,10 +237,9 @@
         </div>
       </div>
     </div>
-
   </footer>
 
-  <!-- Modal Dialog Displaying Closest Friend Match -->
+  <!-- MODAL -->
   <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>Closest Friend Match</h4>
@@ -237,30 +248,32 @@
       <img id="userMatchImage" class="materialboxed" width="650" src="">
     </div>
     <div class="modal-footer">
-      <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
+      <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Close!</a>
     </div>
   </div>
 
   <script type="text/javascript">
-    $(document).ready(function () {
-      $('select').material_select();
 
+    $(document).ready(function () {
+      // INIT SELECT OPTIONS
+      $('select').material_select();
+      // INIT MODAL
       $('.modal').modal({
-        dismissible: false, // Modal can be dismissed by clicking outside of the modal
-        opacity: .5, // Opacity of modal background
-        inDuration: 300, // Transition in duration
-        outDuration: 200, // Transition out duration
-        startingTop: '4%', // Starting top style attribute
-        endingTop: '10%' // Ending top style attribute
+        dismissible: false,
+        opacity: .5,
+        inDuration: 300,
+        outDuration: 200,
+        startingTop: '4%',
+        endingTop: '10%'
       });
     });
 
-    // Activate submit button
+    // INIT SUBMIT BUTTON
     $('#submitButton').on('click', function (event) {
       console.log("ive been clicked")
       event.preventDefault();
 
-      // Gather user inputs
+      // USERS INPUT
       var userInput = {
         name: $('#userName').val(),
         photo: $('#userPhoto').val(),
@@ -277,19 +290,15 @@
           $('#question10').val()
         ]
       };
-
-      // console.log('userInput = ' + JSON.stringify(userInput));
-
-      // Add user inputs to friends list
+      // ADD USERS INPUT/ANSWER TO FRIENDS LIST
       $.post('/api/friends', userInput)
         .done(function (data) {
-          // console.log('response = ' + JSON.stringify(data));
 
-          // Set the name and image values of friend match
+          // SETTING NAMES AND IMAGE VALUES TO MATCHED FRIEND
           $('#userMatch').html(data.matchName);
           $("#userMatchImage").attr("src", data.matchImage);
 
-          // Pop open the modal dialog
+          // OPEN MODAL 
           $('#modal1').modal('open');
         });
     });
