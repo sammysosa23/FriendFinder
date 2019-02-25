@@ -83,6 +83,7 @@
                 <option value="4">4</option>
                 <option value="5">5 (Strongly Agree)</option>
               </select>
+              <!-- <label for="">Materialize Select</label> -->
             </div>
             <!-- - - - - - QUESTION \ TWO - - - - -  -->
             <div class="input-field col s12">
@@ -264,9 +265,16 @@
   </footer>
 
   <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems, options);
+    });
+
+
+
     $(document).ready(function () {
-      $('select').material_select();
-      // $('select').formSelect();
+      // $('select').material_select();
+      $('select').formSelect();
 
       $('.modal').modal({
         dismissible: false,
