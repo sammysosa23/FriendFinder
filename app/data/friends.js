@@ -1,5 +1,5 @@
 // ARRAY THAT HOLDS FRIENDS DATA
-var friendsData = [
+var friendsArray = [
   {
     name: "Sam",
     image: "https://storage.googleapis.com/s8partner-pm_wp/1/2014/07/Untitled-3.jpg",
@@ -26,25 +26,4 @@ var friendsData = [
     scores: [5, 1, 3, 5, 5, 2, 5, 1, 2, 5]
   },
 ];
-// function findMatch(data) {
-//   let diff = [];
-//   let userScores = [];
-//   for (var i = 0; i < data.scores; i++) {
-//     var num = parseInt(data.scores[i]);
-//     userScores.push(num);
-//   };
-//   for (var i = 0; i < friendsData.length; i++) {
-//     let abs = 0;
-//     for (s in friends[i].scores) {
-//       var num = parseInt(friendsData[i].scores[s])
-//       abs = abs + Math.abs(num - userScores[s]);
-//     }
-//     diff.push(abs);
-//   };
-//   diff.pop();
-//   var smallest = Math.min(...diff);
-//   var match = friends[diff.indexOf(smallest)];
-//   return match;
-// }
-// module.exports = findMatch;
-module.exports = friendsData;
+module.exports = friendsArray;

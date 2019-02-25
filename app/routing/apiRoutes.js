@@ -35,6 +35,7 @@ module.exports = function (app) {
         }
       }
       friends.push(userInput);
+
       res.join({ status: 'OK', matchName: matchName, matchImage: matchImage });
     };
   });
