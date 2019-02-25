@@ -6,10 +6,6 @@ body {
   flex-direction: column;
 }
 
-/* font-family: 'Oswald', sans-serif; */
-
-/* font-family: 'Bangers', cursive; */
-
 header {
   height: 100px;
 }
@@ -26,24 +22,11 @@ main.container {
   align-content: center;
 }
 
-/* .waves-light {
-  padding-bottom: 20px;
-} */
-
-/* #submitButton {
-  align-content: center;
-  text-align: center;
-} */
-
 main h1 {
-  /* font-weight: bold; */
-  /* /* font-family: 'Bangers', cursive; */
   font-family: 'Oswald', sans-serif;
 }
 
 main h2 {
-  /* font-weight: 300; */
-  /* font-family: 'Bangers', cursive; */
   font-family: 'Oswald', sans-serif;
 }
 
@@ -64,8 +47,6 @@ main h2 {
 
 .mainpanel {
   margin: 50px;
-  /* align-content: center; */
-  /* text-align: center; */
 }
 
 #mainpanel-content {
